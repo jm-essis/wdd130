@@ -35,7 +35,7 @@ aside {
     margin: 20px;
     border: 2px solid black;
     padding: 15px;
-    background-attachment: fixed;
+    background-color: gray;
 }
 
 aside img {
@@ -46,6 +46,9 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
 footer {
