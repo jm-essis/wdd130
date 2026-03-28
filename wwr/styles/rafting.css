@@ -20,6 +20,36 @@ body {
     background-color: var(--accent-color);
 }
 
+/* ---------------- HEADER (GRID) ---------------- */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
+/* ---------------- NAV (FLEX) ---------------- */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* ---------------- GENERAL LAYOUT ---------------- */
 header,
 main,
 footer {
@@ -31,11 +61,6 @@ h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-}
-
-nav {
-    padding: 1rem;
-    background-color: var(--secondary-color);
 }
 
 p {
@@ -53,10 +78,7 @@ article {
     padding: 1rem;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
+/* ---------------- HERO ---------------- */
 .hero {
     position: relative;
 }
@@ -89,4 +111,59 @@ article {
     float: right;
     width: 120px;
     margin-left: 10px;
+}
+
+/* ---------------- HISTORY (GRID LAYOUT) ---------------- */
+section:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+/* ---------------- ADVENTURES (FLEX WITH FIGURES) ---------------- */
+.adventures {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.adventures figure {
+    flex: 1;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.adventures figcaption {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-top: 2px solid var(--primary-color);
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: auto;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
