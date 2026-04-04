@@ -1,0 +1,235 @@
+:root {
+    --primary-color: #1b4965;
+    --secondary-color: #62b6cb;
+    --accent-color: #cae9ff;
+    --text-color: #0d1b2a;
+
+    --heading-font: Arial, sans-serif;
+    --body-font: Verdana, sans-serif;
+}
+
+/* ---------------- RESET ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------- BODY ---------------- */
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--accent-color);
+}
+
+/* ---------------- LAYOUT ---------------- */
+header,
+main,
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    background-color: white;
+}
+
+/* ---------------- HEADINGS ---------------- */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+/* ---------------- HEADER (GRID) ---------------- */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+}
+
+header img {
+    width: 120px;
+}
+
+/* ---------------- NAV (FLEX) ---------------- */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* ---------------- HERO ---------------- */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--accent-color);
+    padding: 15px;
+    max-width: 500px;
+}
+
+.hero article img {
+    float: right;
+    width: 120px;
+    margin-left: 10px;
+}
+
+/* ---------------- HISTORY ---------------- */
+.history h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-grid img {
+    width: 100%;
+    border-radius: 8px;
+    justify-self: center;
+}
+
+/* ---------------- ADVENTURE ---------------- */
+.adventure h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.adventures {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.adventures figure {
+    flex: 1 1 18%;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.adventures figcaption {
+    margin-top: 5px;
+    font-size: 0.85rem;
+}
+
+/* ---------------- CONTACT INFO ---------------- */
+.contactinfo iframe {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    text-align: center;
+    border: none;
+}
+
+/* ---------------- EMPLOYEES ---------------- */
+.employee-profiles {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.employee-profiles figure {
+    flex: 1;
+    text-align: center;
+}
+
+.employee-profiles img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* ---------------- FORM ---------------- */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-top: 2px solid var(--primary-color);
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia img {
+    width: 30px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}

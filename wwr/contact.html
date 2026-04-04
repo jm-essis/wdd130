@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description"
-      content="Discover our rafting company, our history, mission, and exciting adventures waiting for you on the river.">
+      content="Contact White Water Rafting Company for reservations, questions, or suggestions.">
     <meta name="author" content="Jean Marc Essis">
-    <title>About Us - White Water Rafting</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+
+    <title>Contact Us - White Water Rafting</title>
+
+    <link rel="stylesheet" href="styles/rafting1.css">
 </head>
 
 <body>
+
     <header>
         <img src="images/rafting.jpg" alt="Rafting Company Logo">
         <nav>
@@ -21,65 +25,90 @@
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
+
     <main>
-        <div class="hero">
-            <img src="images/boys.jpg" alt="Rafting Adventure Background">
 
-            <h1>White Water Rafting Company</h1>
-
-            <article>
-                <img src="images/essis.jpg" alt="Happy Client">
-                <p>
-                    Our mission is to provide unforgettable rafting adventures filled with
-                    excitement, safety, and joy.
-                    We believe in teamwork, nature, and creating lasting memories on every river
-                    journey.
-                </p>
-            </article>
-        </div>
+        <!-- COMPANY INFO -->
         <section>
-            <h2>History</h2>
-            <div class="history-grid">
-                <p>
-                    Founded many years ago, our company started as a small group of river
-                    enthusiasts.
-                    Over time, we grew into a leading rafting organization, guiding thousands of
-                    adventurers through thrilling and scenic waterways across the region.
-                </p>
+            <div class="contactinfo">
+                <h2>Contact Information</h2>
 
-                <img src="images/rafting6.jpg" alt="Rafting History">
+                <p><strong>Address:</strong> 123 River Road, Accra, Ghana</p>
+                <p><strong>Phone:</strong> +233 24 123 4567</p>
+                <p><strong>Email:</strong> info@whitewaterrafting.com</p>
 
-                <p>
-                    Today, we are proud to be one of the leading rafting companies, offering
-                    safe and unforgettable experiences. Thousands of adventurers have trusted
-                    us to guide them through some of the most beautiful and thrilling rivers.
-                </p>
+                <!-- Google Map (no inline style) -->
+                <iframe src="https://www.google.com/maps?q=Accra&output=embed" loading="lazy">
+                </iframe>
             </div>
         </section>
-        <section>
-            <h2>Adventure Awaits You!</h2>
-            <div class="adventures">
+
+        <!-- EMPLOYEES -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+
+            <div class="employee-profiles">
                 <figure>
-                    <img src="images/rafting1.jpg" alt="Los Dientes del Diablo">
-                    <figcaption>Los Dientes del Diablo</figcaption>
+                    <img src="images/guide1.jpg" alt="Guide 1">
+                    <figcaption>John - River Guide</figcaption>
                 </figure>
+
                 <figure>
-                    <img src="images/rafting2.jpg" alt="Big Mallard">
-                    <figcaption>Big Mallard</figcaption>
+                    <img src="images/guide2.jpg" alt="Guide 2">
+                    <figcaption>Sarah - Safety Expert</figcaption>
                 </figure>
+
                 <figure>
-                    <img src="images/rafting3.jpg" alt="Half Day Adventure">
-                    <figcaption>Half Day Adventure</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting4.jpg" alt="Rapid Rush">
-                    <figcaption>Rapid Rush</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting5.jpg" alt="Wild River">
-                    <figcaption>Wild River</figcaption>
+                    <img src="images/guide3.jpg" alt="Guide 3">
+                    <figcaption>David - Trip Leader</figcaption>
                 </figure>
             </div>
+        </section>
+
+        <!-- FORM -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form>
+                <!-- Name -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Radio buttons -->
+                <p>Purpose of Message:</p>
+
+                <label>
+                    <input type="radio" name="purpose" value="general" required>
+                    General Inquiry
+                </label>
+
+                <label>
+                    <input type="radio" name="purpose" value="reservation">
+                    Reservation Question
+                </label>
+
+                <label>
+                    <input type="radio" name="purpose" value="suggestion">
+                    Website Suggestion
+                </label>
+
+                <!-- Message -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <!-- Checkbox -->
+                <label>
+                    <input type="checkbox" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <!-- Submit -->
+                <button type="submit">Send Message</button>
+            </form>
         </section>
 
     </main>
