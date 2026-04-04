@@ -114,11 +114,16 @@ article {
 }
 
 /* ---------------- HISTORY (GRID LAYOUT) ---------------- */
-section:nth-of-type(1) {
+.history-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     align-items: center;
+}
+
+.history-grid img {
+    width: 100%;
+    height: auto;
 }
 
 /* ---------------- ADVENTURES (FLEX WITH FIGURES) ---------------- */
