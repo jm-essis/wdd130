@@ -11,7 +11,7 @@
 
     <title>Contact Us - White Water Rafting</title>
 
-    <link rel="stylesheet" href="styles/rafting1.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
@@ -25,90 +25,40 @@
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
+    <main class="contact-grid">
 
-    <main>
+        <section class="contactinfo">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> 123 River Road, Accra, Ghana</p>
+            <p><strong>Phone:</strong> +233 24 123 4567</p>
+            <p><strong>Email:</strong> info@whitewaterrafting.com</p>
 
-        <!-- COMPANY INFO -->
-        <section>
-            <div class="contactinfo">
-                <h2>Contact Information</h2>
-
-                <p><strong>Address:</strong> 123 River Road, Accra, Ghana</p>
-                <p><strong>Phone:</strong> +233 24 123 4567</p>
-                <p><strong>Email:</strong> info@whitewaterrafting.com</p>
-
-                <!-- Google Map (no inline style) -->
-                <iframe src="https://www.google.com/maps?q=Accra&output=embed" loading="lazy">
-                </iframe>
-            </div>
+            <iframe src="https://www.google.com/maps?q=Accra&output=embed" loading="lazy"></iframe>
         </section>
 
-        <!-- EMPLOYEES -->
         <section class="employees">
             <h2>Meet Our Team</h2>
 
             <div class="employee-profiles">
                 <figure>
-                    <img src="images/guide1.jpg" alt="Guide 1">
+                    <img src="images/guide1.jpg" alt="John - River Guide">
                     <figcaption>John - River Guide</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/guide2.jpg" alt="Guide 2">
+                    <img src="images/guide2.jpg" alt="Sarah - Safety Expert">
                     <figcaption>Sarah - Safety Expert</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/guide3.jpg" alt="Guide 3">
+                    <img src="images/guide3.jpg" alt="David - Trip Leader">
                     <figcaption>David - Trip Leader</figcaption>
                 </figure>
             </div>
         </section>
 
-        <!-- FORM -->
         <section class="contact-form">
-            <h2>Send Us a Message</h2>
-
-            <form>
-                <!-- Name -->
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <!-- Email -->
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <!-- Radio buttons -->
-                <p>Purpose of Message:</p>
-
-                <label>
-                    <input type="radio" name="purpose" value="general" required>
-                    General Inquiry
-                </label>
-
-                <label>
-                    <input type="radio" name="purpose" value="reservation">
-                    Reservation Question
-                </label>
-
-                <label>
-                    <input type="radio" name="purpose" value="suggestion">
-                    Website Suggestion
-                </label>
-
-                <!-- Message -->
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-
-                <!-- Checkbox -->
-                <label>
-                    <input type="checkbox" name="newsletter">
-                    Please subscribe to the monthly newsletter
-                </label>
-
-                <!-- Submit -->
-                <button type="submit">Send Message</button>
-            </form>
+            <!-- keep your form here -->
         </section>
 
     </main>
